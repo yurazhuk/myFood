@@ -1,0 +1,86 @@
+//
+//  GoogleSheetsDataProvider.swift
+//  MyFood
+//
+//  Created by yurii zhuk on 6/6/18.
+//  Copyright © 2018 yurii zhuk. All rights reserved.
+//
+
+import Foundation
+import GoogleAPIClientForREST
+import GoogleSignIn
+
+protocol GoogleSheetsDataProviderDelegate: class {
+    func didFailFetchingData(with error: Error)
+}
+
+class GoogleSheetsDataProvider: NSObject {
+    
+    private let spreadsheetId = "1NrPDjp80_7venKB0OsIqZLrq47jbx9c-lrWILYJPS88"
+    
+    private let service = GTLRSheetsService()
+    private let scopes = [kGTLRAuthScopeSheetsSpreadsheetsReadonly]
+    
+    weak var delegate: GoogleSheetsDataProviderDelegate?
+    
+    private var listLoadingCompletionHandler: ((DailyMenuModel) -> ())?
+    
+    enum GoogleSheetsDataProviderErrors: Error {
+        case invalidData
+        case noData
+        
+        var localizedDescription: String {
+            switch self {
+            case .invalidData:
+                return "Fetched data is corrupted"
+            case .noData:
+                return "Fetched data is missing"
+            }
+        }
+    }
+    
+    override init() {
+        super.init()
+        GIDSignIn.sharedInstance().scopes = scopes
+        service.authorizer = nil
+    }
+    
+    func updateServiceAuthorizer(to authorizer: GTMFetcherAuthorizationProtocol){
+        self.service.authorizer = authorizer
+    }
+    
+    
+    func listMajors(_ completionHandler: @escaping ((DailyMenuModel) -> ())) {
+        let query = GTLRSheetsQuery_SpreadsheetsValuesGet
+            .query(withSpreadsheetId: spreadsheetId, range: Calendar.currentDayOfWeek)
+        self.listLoadingCompletionHandler = completionHandler
+        service.executeQuery(query,
+                             delegate: self,
+                             didFinish: #selector(displayResultWithTicket(ticket:finishedWithObject:error:))
+            
+        )
+    }
+    
+    @objc private func displayResultWithTicket(ticket: GTLRServiceTicket,
+                                               finishedWithObject result : GTLRSheets_ValueRange,
+                                               error : NSError?) {
+        
+        if let error = error {
+            delegate?.didFailFetchingData(with: error)
+            return
+        }
+        guard let data = result.values as? [[String]] else {
+            delegate?.didFailFetchingData(with: GoogleSheetsDataProviderErrors.invalidData)
+            return
+        }
+        guard data.isEmpty == false else {
+            delegate?.didFailFetchingData(with: GoogleSheetsDataProviderErrors.noData)
+            return
+        }
+        
+        let model = DailyMenuModel(with: data)
+        
+        listLoadingCompletionHandler?(model)
+    }
+    
+}
