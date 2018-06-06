@@ -10,7 +10,7 @@ import GoogleAPIClientForREST
 import GoogleSignIn
 import UIKit
 
-class ViewController: UIViewController, GIDSignInUIDelegate{
+class LogInController: UIViewController, GIDSignInUIDelegate{
     
     private var signInButton: GIDSignInButton!
     private var output: UITextView!
@@ -26,6 +26,7 @@ class ViewController: UIViewController, GIDSignInUIDelegate{
         configureSheetsDataProvider()
         setupLoginButton()
         configureOutputLog()
+        addPulse(for: signInButton)
     }
     
     private func configureLoginManager() {
@@ -79,9 +80,18 @@ class ViewController: UIViewController, GIDSignInUIDelegate{
     }
 }
 
+func addPulse(for view: UIView){
+    let pulse = Pulsing(numberOfPulses: 1, radius: 110, position: view.center)
+    pulse.animationDuration = 0.8
+    pulse.backgroundColor = UIColor.blue.cgColor
+    
+    view.layer.insertSublayer(pulse, below: view.layer)
+    
+}
+
 // MARK: - GoogleLoginManagerDelegate
 
-extension ViewController: GoogleLoginManagerDelegate {
+extension LogInController: GoogleLoginManagerDelegate {
     func didFailToLogin(with error: Error) {
         showAlert(title: "Authentication Error", message: error.localizedDescription)
     }
@@ -96,7 +106,7 @@ extension ViewController: GoogleLoginManagerDelegate {
     }
 }
 
-extension ViewController: GoogleSheetsDataProviderDelegate {
+extension LogInController: GoogleSheetsDataProviderDelegate {
     func didFailFetchingData(with error: Error) {
         showAlert(title: "Error", message: error.localizedDescription)
     }

@@ -107,7 +107,7 @@ class LoginLeadingPageController: UIViewController, UICollectionViewDataSource, 
     }
 
     fileprivate func registerCells() {
-        colectionView.register(ViewController.self, forCellWithReuseIdentifier: cellId)
+        colectionView.register(LogInController.self, forCellWithReuseIdentifier: cellId)
         colectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: loginCellId)
     }
     
