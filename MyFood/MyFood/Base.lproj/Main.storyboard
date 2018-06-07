@@ -44,7 +44,7 @@
         <!--Food-->
         <scene sceneID="U6H-8g-3hd">
             <objects>
-                <tableViewController id="py5-Kj-kqq" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="DailyFoodController" id="py5-Kj-kqq" customClass="DailyFoodController" customModule="MyFood" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="A28-mH-JVz">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

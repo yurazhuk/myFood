@@ -11,8 +11,6 @@
 		030A33A520C80AC4002BD03F /* PageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030A33A420C80AC4002BD03F /* PageCell.swift */; };
 		030A33A720C8111A002BD03F /* PageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030A33A620C8111A002BD03F /* PageModel.swift */; };
 		030A33A920C81FCB002BD03F /* UIView + Anchors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030A33A820C81FCB002BD03F /* UIView + Anchors.swift */; };
-		030A33AB20C82795002BD03F /* DailyFoodScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030A33AA20C82795002BD03F /* DailyFoodScreenController.swift */; };
-		030A33AD20C827B8002BD03F /* DailyFoodScreenController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 030A33AC20C827B8002BD03F /* DailyFoodScreenController.xib */; };
 		030A33B220C829B8002BD03F /* GoogleLoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030A33B120C829B8002BD03F /* GoogleLoginManager.swift */; };
 		030A33B520C8311A002BD03F /* GoogleSheetsDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030A33B420C8311A002BD03F /* GoogleSheetsDataProvider.swift */; };
 		030A33B820C8404F002BD03F /* Calendar+DayOfWeek.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030A33B720C8404F002BD03F /* Calendar+DayOfWeek.swift */; };
@@ -27,6 +25,7 @@
 		03BFB50320C877F400933965 /* Pulse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BFB50220C877F400933965 /* Pulse.swift */; };
 		03BFB50720C88E2B00933965 /* DailyFoodController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BFB50620C88E2B00933965 /* DailyFoodController.swift */; };
 		03BFB50B20C88EDF00933965 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BFB50A20C88EDF00933965 /* Meal.swift */; };
+		03BFB50D20C96E4000933965 /* Dishes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BFB50C20C96E4000933965 /* Dishes.swift */; };
 		4131B669EF824216C55D3188 /* Pods_MyFood.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9953281EDF2E39981E49C7A /* Pods_MyFood.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,8 +34,6 @@
 		030A33A420C80AC4002BD03F /* PageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageCell.swift; sourceTree = "<group>"; };
 		030A33A620C8111A002BD03F /* PageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageModel.swift; sourceTree = "<group>"; };
 		030A33A820C81FCB002BD03F /* UIView + Anchors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + Anchors.swift"; sourceTree = "<group>"; };
-		030A33AA20C82795002BD03F /* DailyFoodScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyFoodScreenController.swift; sourceTree = "<group>"; };
-		030A33AC20C827B8002BD03F /* DailyFoodScreenController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DailyFoodScreenController.xib; sourceTree = "<group>"; };
 		030A33B120C829B8002BD03F /* GoogleLoginManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleLoginManager.swift; sourceTree = "<group>"; };
 		030A33B420C8311A002BD03F /* GoogleSheetsDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSheetsDataProvider.swift; sourceTree = "<group>"; };
 		030A33B720C8404F002BD03F /* Calendar+DayOfWeek.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Calendar+DayOfWeek.swift"; sourceTree = "<group>"; };
@@ -53,6 +50,7 @@
 		03BFB50220C877F400933965 /* Pulse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pulse.swift; sourceTree = "<group>"; };
 		03BFB50620C88E2B00933965 /* DailyFoodController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyFoodController.swift; sourceTree = "<group>"; };
 		03BFB50A20C88EDF00933965 /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
+		03BFB50C20C96E4000933965 /* Dishes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dishes.swift; sourceTree = "<group>"; };
 		376823EB203EE23CA1A5B433 /* Pods-MyFood.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyFood.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyFood/Pods-MyFood.debug.xcconfig"; sourceTree = "<group>"; };
 		6B6A7BC513332A790F949B06 /* Pods-MyFood.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyFood.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyFood/Pods-MyFood.release.xcconfig"; sourceTree = "<group>"; };
 		E9953281EDF2E39981E49C7A /* Pods_MyFood.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyFood.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -70,31 +68,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		030A33AE20C827BE002BD03F /* Daily Food Screen */ = {
-			isa = PBXGroup;
-			children = (
-				030A33AF20C827CF002BD03F /* Controllers */,
-				030A33B020C827D5002BD03F /* Views */,
-			);
-			path = "Daily Food Screen";
-			sourceTree = "<group>";
-		};
-		030A33AF20C827CF002BD03F /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				030A33AA20C82795002BD03F /* DailyFoodScreenController.swift */,
-			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
-		030A33B020C827D5002BD03F /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				030A33AC20C827B8002BD03F /* DailyFoodScreenController.xib */,
-			);
-			name = Views;
-			sourceTree = "<group>";
-		};
 		030A33B320C830FF002BD03F /* Services */ = {
 			isa = PBXGroup;
 			children = (
@@ -137,15 +110,15 @@
 				0367B78620C7124E005BD3D8 /* AppDelegate.swift */,
 				030A33B320C830FF002BD03F /* Services */,
 				0367B78820C7124E005BD3D8 /* LoginController.swift */,
+				03BFB50620C88E2B00933965 /* DailyFoodController.swift */,
+				03BFB50A20C88EDF00933965 /* Meal.swift */,
 				03BFB50020C874C000933965 /* GetNameController.swift */,
 				0367B79820C71CCC005BD3D8 /* DailyMenuModel.swift */,
 				03BFB50820C88E6B00933965 /* LoginLeadingPage */,
 				0367B78A20C7124E005BD3D8 /* Main.storyboard */,
-				03BFB50620C88E2B00933965 /* DailyFoodController.swift */,
-				03BFB50A20C88EDF00933965 /* Meal.swift */,
+				03BFB50C20C96E4000933965 /* Dishes.swift */,
 				030A33B620C8403F002BD03F /* Extensions */,
 				03BFB50920C88E9C00933965 /* Animations */,
-				030A33AE20C827BE002BD03F /* Daily Food Screen */,
 				0367B78D20C7124E005BD3D8 /* Assets.xcassets */,
 				0367B78F20C7124E005BD3D8 /* LaunchScreen.storyboard */,
 				0367B79220C7124E005BD3D8 /* Info.plist */,
@@ -252,7 +225,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				0367B79120C7124E005BD3D8 /* LaunchScreen.storyboard in Resources */,
-				030A33AD20C827B8002BD03F /* DailyFoodScreenController.xib in Resources */,
 				0367B78E20C7124E005BD3D8 /* Assets.xcassets in Resources */,
 				0367B78C20C7124E005BD3D8 /* Main.storyboard in Resources */,
 			);
@@ -332,7 +304,7 @@
 				030A33A920C81FCB002BD03F /* UIView + Anchors.swift in Sources */,
 				030A33B520C8311A002BD03F /* GoogleSheetsDataProvider.swift in Sources */,
 				030A33B820C8404F002BD03F /* Calendar+DayOfWeek.swift in Sources */,
-				030A33AB20C82795002BD03F /* DailyFoodScreenController.swift in Sources */,
+				03BFB50D20C96E4000933965 /* Dishes.swift in Sources */,
 				030A33B220C829B8002BD03F /* GoogleLoginManager.swift in Sources */,
 				0367B78920C7124E005BD3D8 /* LoginController.swift in Sources */,
 				030A33A520C80AC4002BD03F /* PageCell.swift in Sources */,

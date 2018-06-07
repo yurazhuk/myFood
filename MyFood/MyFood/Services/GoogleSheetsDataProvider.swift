@@ -19,7 +19,6 @@ class GoogleSheetsDataProvider: NSObject {
     private let spreadsheetId = "1NrPDjp80_7venKB0OsIqZLrq47jbx9c-lrWILYJPS88"
     
     private let service = GTLRSheetsService()
-    private let scopes = [kGTLRAuthScopeSheetsSpreadsheetsReadonly]
     
     weak var delegate: GoogleSheetsDataProviderDelegate?
     
@@ -39,14 +38,13 @@ class GoogleSheetsDataProvider: NSObject {
         }
     }
     
-    override init() {
+    init(_ authorizer: GTMFetcherAuthorizationProtocol) {
         super.init()
-        GIDSignIn.sharedInstance().scopes = scopes
-        service.authorizer = nil
+        self.service.authorizer = authorizer
     }
     
     func updateServiceAuthorizer(to authorizer: GTMFetcherAuthorizationProtocol){
-        self.service.authorizer = authorizer
+        
     }
     
     

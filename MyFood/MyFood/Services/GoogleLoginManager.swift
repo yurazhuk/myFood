@@ -16,10 +16,11 @@ protocol GoogleLoginManagerDelegate: class {
 }
 
 class GoogleLoginManager: NSObject, GIDSignInDelegate {
-    
+    private let scopes = [kGTLRAuthScopeSheetsSpreadsheetsReadonly]
     override init() {
         super.init()
         GIDSignIn.sharedInstance().delegate = self
+        GIDSignIn.sharedInstance().scopes = scopes
         GIDSignIn.sharedInstance().signInSilently()
     }
     
