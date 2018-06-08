@@ -11,6 +11,8 @@ import GoogleSignIn
 import UIKit
 
 class LogInController: UIViewController, GIDSignInUIDelegate{
+    @IBOutlet weak var backgroundImage: UIImageView!
+    
     
     private var signInButton: GIDSignInButton!
     private var loginManager: GoogleLoginManager!
@@ -19,7 +21,7 @@ class LogInController: UIViewController, GIDSignInUIDelegate{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+    view.addSubview(backgroundImage)
         GIDSignIn.sharedInstance().uiDelegate = self
         
         configureLoginManager()

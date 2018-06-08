@@ -35,7 +35,8 @@ class NameVC: UIViewController {
             }
         } else {
             backgroundImage.image = UIImage(named: "background")
-        view.backgroundColor = .white
+        view.addSubview(backgroundImage)
+            
         let button = UIButton(frame: CGRect(x: 10, y: 10, width: 50, height: 50))
         button.center = view.center
         button.backgroundColor = .black

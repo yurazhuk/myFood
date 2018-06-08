@@ -23,10 +23,22 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="4Eg-mO-TJg">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4Eg-mO-TJg" secondAttribute="trailing" id="L3A-km-0J7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="4Eg-mO-TJg" secondAttribute="bottom" id="RZ0-Rr-Lob"/>
+                            <constraint firstItem="4Eg-mO-TJg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="mB6-DA-hXw"/>
+                            <constraint firstItem="4Eg-mO-TJg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="uOq-fK-jT4"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="backgroundImage" destination="4Eg-mO-TJg" id="urs-ul-hDQ"/>
                         <segue destination="IUE-Gg-tGs" kind="show" identifier="nameVCsegue" id="uPo-p9-ejU"/>
                         <segue destination="Lgn-WT-Q7l" kind="show" identifier="dailyFoodVC" id="SbG-eU-Zoa"/>
                     </connections>
@@ -48,7 +60,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="C8j-Eq-dta">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="C8j-Eq-dta">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                         </subviews>
@@ -208,8 +220,9 @@
     </scenes>
     <resources>
         <image name="Salad" width="512" height="384"/>
+        <image name="background" width="237" height="342"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="bL1-lj-afB"/>
+        <segue reference="SbG-eU-Zoa"/>
     </inferredMetricsTieBreakers>
 </document>
