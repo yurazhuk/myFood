@@ -2,4 +2,387 @@
 <Bucket
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyFood/Services/GoogleSheetsDataProvider.swift"
+            timestampString = "550189631.974245"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "GoogleSheetsDataProvider"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyFood.GoogleSheetsDataProvider.__deallocating_deinit"
+                  moduleName = "MyFood"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yuriizhuk/Desktop/readdle/MyFood/MyFood/Services/GoogleSheetsDataProvider.swift"
+                  timestampString = "550141965.817165"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyFood.GoogleSheetsDataProvider.__allocating_init() -&gt; MyFood.GoogleSheetsDataProvider"
+                  moduleName = "MyFood"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yuriizhuk/Desktop/readdle/MyFood/MyFood/Services/GoogleSheetsDataProvider.swift"
+                  timestampString = "550141965.832137"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyFood.GoogleSheetsDataProvider.init() -&gt; MyFood.GoogleSheetsDataProvider"
+                  moduleName = "MyFood"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yuriizhuk/Desktop/readdle/MyFood/MyFood/Services/GoogleSheetsDataProvider.swift"
+                  timestampString = "550141965.833748"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "8">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyFood/Services/GoogleSheetsDataProvider.swift"
+            timestampString = "550189631.9749171"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "GoogleSheetsDataProvider"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyFood/Services/GoogleSheetsDataProvider.swift"
+            timestampString = "550189631.975401"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "GoogleSheetsDataProvider"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyFood/Services/GoogleSheetsDataProvider.swift"
+            timestampString = "550189631.975775"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "GoogleSheetsDataProvider"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyFood.GoogleSheetsDataProvider.delegate.getter : weak Swift.Optional&lt;MyFood.GoogleSheetsDataProviderDelegate&gt;"
+                  moduleName = "MyFood"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yuriizhuk/Desktop/readdle/MyFood/MyFood/Services/GoogleSheetsDataProvider.swift"
+                  timestampString = "550142058.645936"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "118">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyFood.GoogleSheetsDataProvider.delegate.setter : weak Swift.Optional&lt;MyFood.GoogleSheetsDataProviderDelegate&gt;"
+                  moduleName = "MyFood"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yuriizhuk/Desktop/readdle/MyFood/MyFood/Services/GoogleSheetsDataProvider.swift"
+                  timestampString = "550142058.648432"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "125">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyFood.GoogleSheetsDataProvider.init(__ObjC.GTMFetcherAuthorizationProtocol) -&gt; MyFood.GoogleSheetsDataProvider"
+                  moduleName = "MyFood"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yuriizhuk/Desktop/readdle/MyFood/MyFood/Services/GoogleSheetsDataProvider.swift"
+                  timestampString = "550142058.6512229"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "360">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyFood/Services/GoogleSheetsDataProvider.swift"
+            timestampString = "550189631.9769011"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "GoogleSheetsDataProvider"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyFood.GoogleSheetsDataProvider.(listLoadingCompletionHandler in _DF27CE02309B9C34CD7060F6CB40F08A).getter : Swift.Optional&lt;(MyFood.DailyMenuModel) -&gt; ()&gt;"
+                  moduleName = "MyFood"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yuriizhuk/Desktop/readdle/MyFood/MyFood/Services/GoogleSheetsDataProvider.swift"
+                  timestampString = "550142058.666072"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "114">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyFood.GoogleSheetsDataProvider.(listLoadingCompletionHandler in _DF27CE02309B9C34CD7060F6CB40F08A).setter : Swift.Optional&lt;(MyFood.DailyMenuModel) -&gt; ()&gt;"
+                  moduleName = "MyFood"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yuriizhuk/Desktop/readdle/MyFood/MyFood/Services/GoogleSheetsDataProvider.swift"
+                  timestampString = "550142058.667969"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "132">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyFood.GoogleSheetsDataProvider.init(__ObjC.GTMFetcherAuthorizationProtocol) -&gt; MyFood.GoogleSheetsDataProvider"
+                  moduleName = "MyFood"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yuriizhuk/Desktop/readdle/MyFood/MyFood/Services/GoogleSheetsDataProvider.swift"
+                  timestampString = "550142058.670354"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "742">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyFood/Services/GoogleSheetsDataProvider.swift"
+            timestampString = "550189631.978053"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "GoogleSheetsDataProvider"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyFood/Services/GoogleSheetsDataProvider.swift"
+            timestampString = "550189631.979845"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "GoogleSheetsDataProvider"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyFood.GoogleSheetsDataProvider.__allocating_init(__ObjC.GTMFetcherAuthorizationProtocol) -&gt; MyFood.GoogleSheetsDataProvider"
+                  moduleName = "MyFood"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yuriizhuk/Desktop/readdle/MyFood/MyFood/Services/GoogleSheetsDataProvider.swift"
+                  timestampString = "550142058.677543"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyFood.GoogleSheetsDataProvider.init(__ObjC.GTMFetcherAuthorizationProtocol) -&gt; MyFood.GoogleSheetsDataProvider"
+                  moduleName = "MyFood"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yuriizhuk/Desktop/readdle/MyFood/MyFood/Services/GoogleSheetsDataProvider.swift"
+                  timestampString = "550142058.6803041"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "40">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyFood/Services/GoogleSheetsDataProvider.swift"
+            timestampString = "550189631.980875"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
+            landmarkName = "init()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyFood/Services/GoogleSheetsDataProvider.swift"
+            timestampString = "550189631.981387"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
+            landmarkName = "GoogleSheetsDataProvider"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyFood/Services/GoogleSheetsDataProvider.swift"
+            timestampString = "550189631.981836"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
+            landmarkName = "GoogleSheetsDataProvider"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyFood/Services/GoogleSheetsDataProvider.swift"
+            timestampString = "550189631.982293"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
+            landmarkName = "listMajors(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyFood/Services/GoogleSheetsDataProvider.swift"
+            timestampString = "550189631.9828"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
+            landmarkName = "listMajors(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyFood/Services/GoogleSheetsDataProvider.swift"
+            timestampString = "550189631.983124"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "listMajors(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>
