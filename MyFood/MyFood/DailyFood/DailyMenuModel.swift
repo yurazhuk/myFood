@@ -11,34 +11,24 @@ import Foundation
 class DailyMenuModel {
     
     private let name = "Боб Коузи"
-    private var menuItems = [[String]]()
+    private var input = [[String]]()
+    private(set) var workerMeal = [String]()  
     
     init(with data: [[String]]) {
-        self.menuItems = data
+        self.input = data
         formDailyMenu()
     }
     
-    func getMenuItemsString() -> String {
-        var majorsString = "Name, Major:\n"
-        for row in menuItems {
-            let name = row[0]
-            let major = row[1]
-            
-            majorsString += "\(name), \(major)\n"
-        }
-        return majorsString
-    }
-    
     private func formDailyMenu() {
-        menuItems.removeFirst() // removing unnecessary fields
-        let menu = menuItems.removeFirst() // geting menu items
+        input.removeFirst() // removing unnecessary fields
+        let menu = input.removeFirst() // geting menu items
         
-        for workerRequests in menuItems {
+        for workerRequests in input {
             if workerRequests[0] == name {
                 print(workerRequests)
                 for item in 1..<workerRequests.count {
                     if !workerRequests[item].isEmpty {
-                        print(menu[item])
+                        workerMeal.append(menu[item])
                     }
                 }
             }

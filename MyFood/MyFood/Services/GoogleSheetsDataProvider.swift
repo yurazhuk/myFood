@@ -48,9 +48,9 @@ class GoogleSheetsDataProvider: NSObject {
     }
     
     
-    func listMajors(_ completionHandler: @escaping ((DailyMenuModel) -> ())) {
+    func listMajors(_ completionHandler: @escaping ((DailyMenuModel) -> ()), range: String){
         let query = GTLRSheetsQuery_SpreadsheetsValuesGet
-            .query(withSpreadsheetId: spreadsheetId, range: Calendar.currentDayOfWeek)
+            .query(withSpreadsheetId: spreadsheetId, range: range)
         self.listLoadingCompletionHandler = completionHandler
         service.executeQuery(query,
                              delegate: self,

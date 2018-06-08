@@ -15,15 +15,8 @@ class DailyFoodController: UITableViewController {
     private var sheetsDataProvider: GoogleSheetsDataProvider!
     private var output: UITextView!
     var token: GTMFetcherAuthorizationProtocol!
-    
-    //    init(_ authentificator: GTMFetcherAuthorizationProtocol) {
-    //        super.init(nibName: nil, bundle: nil)
-    //        configureSheetsDataProvider(from: authentificator)
-    //    }
-    
-    //    required init?(coder aDecoder: NSCoder) {
-    //        fatalError("init(coder:) has not been implemented")
-    //    }
+    private let cellIdentifier = "FoodItem"
+    var meals = [Meal]()
     
     init() {
         super.init(nibName: nil, bundle: nil)
@@ -32,25 +25,18 @@ class DailyFoodController: UITableViewController {
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        print(token)
-        print("called")
     }
     
-    var meals: [Meal] = {
-        let firstMeal = Meal(mealName: "rise", portions: 1, descriprion: "RISE", image: UIImage(named: "Page1")!)
-        let secondMeal = Meal(mealName: "rise", portions: 1, descriprion: "RISE", image: UIImage(named: "Page1")!)
-        let thirdMeal = Meal(mealName: "rise", portions: 1, descriprion: "RISE", image: UIImage(named: "Page1")!)
-        let fourthMeal = Meal(mealName: "rise", portions: 1, descriprion: "RISE", image: UIImage(named: "Page1")!)
-        return [firstMeal, secondMeal, thirdMeal]
-    }()
-    
-    let cellIdentifier = "FoodItem"
     
     override func viewDidLoad() {
         super.viewDidLoad()
         configureSheetsDataProvider(from: token)
         configureOutputLog()
         requestDataFromProvider()
+        
+        meals.append(Meal(mealName: "freak", portions: 1, descriprion: "RISE", image: UIImage(named: "Page1")!))
+        print("this will be done first")
+        
         tableView.estimatedRowHeight = 150
         tableView.rowHeight = UITableViewAutomaticDimension
     }
@@ -70,13 +56,14 @@ class DailyFoodController: UITableViewController {
         output.isHidden = true
     }
     
-    private func requestDataFromProvider() {
-        sheetsDataProvider.listMajors {[weak self] model in
-            print("entered thus scope")
-            print(model.getMenuItemsString())
+    private func requestDataFromProvider(){
+        sheetsDataProvider.listMajors({[weak self] model in
+//            print(self?.meals[1].mealName as Any)
+            print("this will be done fastest")
             
-//            self?.output.text = model.getMenuItemsString()
-        }
+    //            self?.output.text = model.getMenuItemsString()
+            }, range: Calendar.currentDayOfWeek)
+        print("this will be done second")
     }
     
     // MARK: - Table view data source
@@ -95,14 +82,8 @@ class DailyFoodController: UITableViewController {
             cell = dequeuedcell
         } else {
             cell = DailyFoodCell(style: UITableViewCellStyle.default, reuseIdentifier: cellIdentifier)
-            
         }
-        
-        
         cell.setMeal(meal: meal)
-        
-        print(cell.mealName)
-        
         cell.backgroundColor = .red
         return cell
     }

@@ -115,10 +115,7 @@
 				030A33B320C830FF002BD03F /* Services */,
 				0367B78820C7124E005BD3D8 /* LoginController.swift */,
 				03FFBB8A20CA6723007C5CD5 /* NameVC.swift */,
-				03BFB50620C88E2B00933965 /* DailyFoodController.swift */,
-				0304061020CA46560096D5B1 /* DailyFoodCell.swift */,
-				0367B79820C71CCC005BD3D8 /* DailyMenuModel.swift */,
-				03BFB50A20C88EDF00933965 /* Meal.swift */,
+				03FFBBAE20CACD09007C5CD5 /* DailyFood */,
 				03FFBBAC20CAA590007C5CD5 /* PopOverViewController.swift */,
 				03BFB50820C88E6B00933965 /* LoginLeadingPage */,
 				0367B78A20C7124E005BD3D8 /* Main.storyboard */,
@@ -149,6 +146,17 @@
 				03BFB50220C877F400933965 /* Pulse.swift */,
 			);
 			path = Animations;
+			sourceTree = "<group>";
+		};
+		03FFBBAE20CACD09007C5CD5 /* DailyFood */ = {
+			isa = PBXGroup;
+			children = (
+				03BFB50620C88E2B00933965 /* DailyFoodController.swift */,
+				0367B79820C71CCC005BD3D8 /* DailyMenuModel.swift */,
+				0304061020CA46560096D5B1 /* DailyFoodCell.swift */,
+				03BFB50A20C88EDF00933965 /* Meal.swift */,
+			);
+			path = DailyFood;
 			sourceTree = "<group>";
 		};
 		11F450C3075987F18AC2170D /* Frameworks */ = {
