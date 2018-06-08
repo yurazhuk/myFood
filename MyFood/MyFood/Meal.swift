@@ -9,7 +9,7 @@
 import UIKit
 
 class Meal {
-    let mealName: String
+    var mealName: String
     let portions: Int
     let descriprion: String
     let image:  UIImage

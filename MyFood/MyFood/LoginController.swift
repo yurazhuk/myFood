@@ -14,6 +14,7 @@ class LogInController: UIViewController, GIDSignInUIDelegate{
     
     private var signInButton: GIDSignInButton!
     private var loginManager: GoogleLoginManager!
+    private var authorizer: GTMFetcherAuthorizationProtocol!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,11 +40,15 @@ class LogInController: UIViewController, GIDSignInUIDelegate{
     
     private func presentDailyFoodController(with authorizer: GTMFetcherAuthorizationProtocol) {
         
-        let controller = DailyFoodController(authorizer)
+//        let controller = DailyFoodController(authorizer)
+//
+//        self.present(controller, animated: true, completion: nil)
         
-        self.present(controller, animated: true, completion: nil)
-        
+//        let controller = NameVC(authorizer)
+//        
+//        self.present(controller, animated: true, completion: nil)
     }
+    
     
     // Helper for showing an alert
     func showAlert(title : String, message: String) {
@@ -62,14 +67,6 @@ class LogInController: UIViewController, GIDSignInUIDelegate{
     }
 }
 
-//func addPulse(for view: UIView) {
-//    let pulse = Pulsing(numberOfPulses: 1, radius: 110, position: view.center)
-//    pulse.animationDuration = 0.8
-//    pulse.backgroundColor = UIColor.blue.cgColor
-//
-//    view.layer.insertSublayer(pulse, below: view.layer)
-//
-//}
 
 // MARK: - GoogleLoginManagerDelegate
 
@@ -80,10 +77,20 @@ extension LogInController: GoogleLoginManagerDelegate {
     
     func didLoginSuccessfully(with authorizer: GTMFetcherAuthorizationProtocol) {
         self.signInButton.isHidden = true
-        presentDailyFoodController(with: authorizer)
+        self.authorizer = authorizer
+//        presentDailyFoodController(with: authorizer)
+        performSegue(withIdentifier: "lol", sender: authorizer)
+        self.authorizer = authorizer
         
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "lol" {
+            let destVC = segue.destination as! NameVC
+            print(authorizer)
+            destVC.sheetsDataProvider = sender as! GTMFetcherAuthorizationProtocol
+        }
+    }
     
 }
 

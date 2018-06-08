@@ -12,11 +12,10 @@ class DailyFoodCell: UITableViewCell {
     
     @IBOutlet weak var cellImageView: UIImageView!
     @IBOutlet weak var mealName: UILabel!
-    @IBOutlet weak var mealCount: UILabel!
     
     func setMeal(meal: Meal) {
-//        cellImageView.image = UIImage(named: "Page1")
-        mealName.text = meal.mealName
-        mealCount.text = meal.descriprion
+        cellImageView.image = meal.image
+        print(meal.mealName)
+        mealName?.text = meal.mealName
     }
 }

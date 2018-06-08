@@ -13,18 +13,44 @@ import UIKit
 
 class NameVC: UIViewController {
     
-    private var sheetsDataProvider: GTMFetcherAuthorizationProtocol!
+    var sheetsDataProvider: GTMFetcherAuthorizationProtocol!
+    @IBOutlet weak var enterNameButton: UIButton!
     
-    init(_ authorizer: GTMFetcherAuthorizationProtocol) {
+//    init(_ authorizer: GTMFetcherAuthorizationProtocol) {
+//        super.init(nibName: nil, bundle: nil)
+//        sheetsDataProvider = authorizer
+//    }
+    
+    init() {
         super.init(nibName: nil, bundle: nil)
-        sheetsDataProvider = authorizer
+        
     }
     
     required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        super.init(coder: aDecoder)
     }
     
-    @IBAction func buttonPressed(_ sender: Any) {
+    override func viewDidLoad() {
+        view.backgroundColor = .white
+        let button = UIButton(frame: CGRect(x: 10, y: 10, width: 50, height: 50))
+        button.center = view.center
+        button.backgroundColor = .black
+        view.addSubview(button)
+        button.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
+        button.isUserInteractionEnabled = true
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "kek" {
+            var destVC = segue.destination as! DailyFoodController
+            destVC.token = sender as! GTMFetcherAuthorizationProtocol
+        }
+    }
+    
+    @objc func buttonTapped() {
+    performSegue(withIdentifier: "kek", sender: sheetsDataProvider)
         
     }
+    
 }
+

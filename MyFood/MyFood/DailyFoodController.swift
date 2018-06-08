@@ -5,6 +5,7 @@
 //  Created by yurii zhuk on 6/7/18.
 //  Copyright © 2018 yurii zhuk. All rights reserved.
 //
+
 import GoogleAPIClientForREST
 import UIKit
 import GoogleSignIn
@@ -13,20 +14,33 @@ class DailyFoodController: UITableViewController {
     
     private var sheetsDataProvider: GoogleSheetsDataProvider!
     private var output: UITextView!
+    var token: GTMFetcherAuthorizationProtocol!
     
-    init(_ authentificator: GTMFetcherAuthorizationProtocol) {
+    //    init(_ authentificator: GTMFetcherAuthorizationProtocol) {
+    //        super.init(nibName: nil, bundle: nil)
+    //        configureSheetsDataProvider(from: authentificator)
+    //    }
+    
+    //    required init?(coder aDecoder: NSCoder) {
+    //        fatalError("init(coder:) has not been implemented")
+    //    }
+    
+    init() {
         super.init(nibName: nil, bundle: nil)
-        configureSheetsDataProvider(from: authentificator)
+        print("done")
     }
     
     required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        super.init(coder: aDecoder)
+        print(token)
+        print("called")
     }
     
     var meals: [Meal] = {
         let firstMeal = Meal(mealName: "rise", portions: 1, descriprion: "RISE", image: UIImage(named: "Page1")!)
         let secondMeal = Meal(mealName: "rise", portions: 1, descriprion: "RISE", image: UIImage(named: "Page1")!)
         let thirdMeal = Meal(mealName: "rise", portions: 1, descriprion: "RISE", image: UIImage(named: "Page1")!)
+        let fourthMeal = Meal(mealName: "rise", portions: 1, descriprion: "RISE", image: UIImage(named: "Page1")!)
         return [firstMeal, secondMeal, thirdMeal]
     }()
     
@@ -34,12 +48,15 @@ class DailyFoodController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        configureSheetsDataProvider(from: token)
         configureOutputLog()
         requestDataFromProvider()
-        self.tableView.register(DailyFoodCell.self, forCellReuseIdentifier: "FoodItem")
+        tableView.estimatedRowHeight = 150
+        tableView.rowHeight = UITableViewAutomaticDimension
     }
     
     private func configureSheetsDataProvider(from token: GTMFetcherAuthorizationProtocol) {
+        print(self.token)
         sheetsDataProvider = GoogleSheetsDataProvider(token)
         sheetsDataProvider.delegate = self
     }
@@ -54,28 +71,47 @@ class DailyFoodController: UITableViewController {
     }
     
     private func requestDataFromProvider() {
-        print("entered this scope")
         sheetsDataProvider.listMajors {[weak self] model in
             print("entered thus scope")
-            self?.output.text = model.getMenuItemsString()
+            print(model.getMenuItemsString())
+            
+//            self?.output.text = model.getMenuItemsString()
         }
     }
     
     // MARK: - Table view data source
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        print(meals.count)
+        
         return meals.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
+        var cell: DailyFoodCell
         let meal = meals[indexPath.row]
-        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! DailyFoodCell
+        
+        if let dequeuedcell = self.tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? DailyFoodCell {
+            cell = dequeuedcell
+        } else {
+            cell = DailyFoodCell(style: UITableViewCellStyle.default, reuseIdentifier: cellIdentifier)
+            
+        }
+        
         
         cell.setMeal(meal: meal)
+        
+        print(cell.mealName)
+        
+        cell.backgroundColor = .red
         return cell
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+       
+        let cellIndex = indexPath.row
+        performSegue(withIdentifier: "presentPopover", sender: self)
+    }
     
     
     func showAlert(title : String, message: String) {
@@ -92,7 +128,7 @@ class DailyFoodController: UITableViewController {
         alert.addAction(ok)
         present(alert, animated: true, completion: nil)
     }
-
+    
     
     
 }
@@ -104,3 +140,4 @@ extension DailyFoodController: GoogleSheetsDataProviderDelegate {
     }
     
 }
+
