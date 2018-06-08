@@ -8,34 +8,16 @@
 
 import UIKit
 
-struct Meal {
+class Meal {
     let mealName: String
     let portions: Int
     let descriprion: String
-//    var Photo: UIImage {
-//        switch mealName {
-//        case "Салат из свежих овощей с маслом":
-//            <#code#>
-//        case "Салат из свежих овощей с маслом":
-//            <#code#>
-//        case "Салат из свежих овощей с маслом":
-//        case "Салат из свежих овощей с маслом":
-//            
-//        case "Салат из свежих овощей с маслом":
-//        case "Салат из свежих овощей с маслом":
-//            
-//        case "Салат из свежих овощей с маслом":
-//            <#code#>
-//        case "Салат из свежих овощей с маслом":
-//            <#code#>
-//        case "Салат из свежих овощей с маслом":
-//        case "Салат из свежих овощей с маслом":
-//            
-//        case "Салат из свежих овощей с маслом":
-//        case "Салат из свежих овощей с маслом":
-//            <#code#>
-//        default:
-//            <#code#>
-//        }
-//    }
+    let image:  UIImage
+    
+    init(mealName: String, portions: Int, descriprion: String, image: UIImage) {
+        self.mealName = mealName
+        self.portions = portions
+        self.descriprion = descriprion
+        self.image = image
+    }
 }
