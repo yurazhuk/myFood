@@ -14,12 +14,6 @@ import UIKit
 class NameVC: UIViewController {
     
     var sheetsDataProvider: GTMFetcherAuthorizationProtocol!
-    @IBOutlet weak var enterNameButton: UIButton!
-    
-//    init(_ authorizer: GTMFetcherAuthorizationProtocol) {
-//        super.init(nibName: nil, bundle: nil)
-//        sheetsDataProvider = authorizer
-//    }
     
     init() {
         super.init(nibName: nil, bundle: nil)
@@ -42,7 +36,7 @@ class NameVC: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "kek" {
-            var destVC = segue.destination as! DailyFoodController
+            let destVC = segue.destination as! DailyFoodController
             destVC.token = sender as! GTMFetcherAuthorizationProtocol
         }
     }

@@ -10,14 +10,16 @@ import UIKit
 
 class Meal {
     var mealName: String
-    let portions: Int
-    let descriprion: String
-    let image:  UIImage
-    
-    init(mealName: String, portions: Int, descriprion: String, image: UIImage) {
+    var image: UIImage {
+    if let image = UIImage(named: mealName) {
+            return image
+        } else {
+            return UIImage(named: "NoImage")!
+        }
+}
+    init(mealName: String) {
         self.mealName = mealName
-        self.portions = portions
-        self.descriprion = descriprion
-        self.image = image
     }
+    
+    let descriprion = "LС другой стороны начало повседневной работы по формированию позиции позволяет оценить значение дальнейших направлений развития. Товарищи! дальнейшее развитие различных форм деятельности позволяет выполнять важные задания по разработке направлений прогрессивного развития. Задача организации, в особенности же дальнейшее развитие различных форм деятельности обеспечивает широкому кругу (специалистов) участие в формировании дальнейших направлений развития. Товарищи! дальнейшее развитие различных форм деятельности представляет собой интересный эксперимент проверки соответствующий условий активизации."
 }

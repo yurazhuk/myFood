@@ -2,15 +2,17 @@
   "images" : [
     {
       "idiom" : "universal",
+      "filename" : "Рыбные тефтели паровые.jpg",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "android_vector.jpg",
+      "filename" : "Рыбные тефтели паровые-1.jpg",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
+      "filename" : "Рыбные тефтели паровые-2.jpg",
       "scale" : "3x"
     }
   ],

@@ -18,16 +18,15 @@
 		0367B78720C7124E005BD3D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0367B78620C7124E005BD3D8 /* AppDelegate.swift */; };
 		0367B78920C7124E005BD3D8 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0367B78820C7124E005BD3D8 /* LoginController.swift */; };
 		0367B78C20C7124E005BD3D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0367B78A20C7124E005BD3D8 /* Main.storyboard */; };
-		0367B78E20C7124E005BD3D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0367B78D20C7124E005BD3D8 /* Assets.xcassets */; };
 		0367B79120C7124E005BD3D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0367B78F20C7124E005BD3D8 /* LaunchScreen.storyboard */; };
 		0367B79920C71CCC005BD3D8 /* DailyMenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0367B79820C71CCC005BD3D8 /* DailyMenuModel.swift */; };
 		03BFB4FF20C872C400933965 /* CircularTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BFB4FE20C872C400933965 /* CircularTransition.swift */; };
 		03BFB50320C877F400933965 /* Pulse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BFB50220C877F400933965 /* Pulse.swift */; };
 		03BFB50720C88E2B00933965 /* DailyFoodController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BFB50620C88E2B00933965 /* DailyFoodController.swift */; };
 		03BFB50B20C88EDF00933965 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BFB50A20C88EDF00933965 /* Meal.swift */; };
-		03BFB50D20C96E4000933965 /* Dishes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BFB50C20C96E4000933965 /* Dishes.swift */; };
 		03FFBB8B20CA6723007C5CD5 /* NameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FFBB8A20CA6723007C5CD5 /* NameVC.swift */; };
 		03FFBBAD20CAA590007C5CD5 /* PopOverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FFBBAC20CAA590007C5CD5 /* PopOverViewController.swift */; };
+		03FFBBB420CB18FD007C5CD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03FFBBB320CB18FD007C5CD5 /* Assets.xcassets */; };
 		4131B669EF824216C55D3188 /* Pods_MyFood.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9953281EDF2E39981E49C7A /* Pods_MyFood.framework */; };
 /* End PBXBuildFile section */
 
@@ -44,7 +43,6 @@
 		0367B78620C7124E005BD3D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0367B78820C7124E005BD3D8 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		0367B78B20C7124E005BD3D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		0367B78D20C7124E005BD3D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0367B79020C7124E005BD3D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0367B79220C7124E005BD3D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0367B79820C71CCC005BD3D8 /* DailyMenuModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyMenuModel.swift; sourceTree = "<group>"; };
@@ -52,9 +50,9 @@
 		03BFB50220C877F400933965 /* Pulse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pulse.swift; sourceTree = "<group>"; };
 		03BFB50620C88E2B00933965 /* DailyFoodController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyFoodController.swift; sourceTree = "<group>"; };
 		03BFB50A20C88EDF00933965 /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
-		03BFB50C20C96E4000933965 /* Dishes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dishes.swift; sourceTree = "<group>"; };
 		03FFBB8A20CA6723007C5CD5 /* NameVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameVC.swift; sourceTree = "<group>"; };
 		03FFBBAC20CAA590007C5CD5 /* PopOverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopOverViewController.swift; sourceTree = "<group>"; };
+		03FFBBB320CB18FD007C5CD5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = MyFood/Assets.xcassets; sourceTree = SOURCE_ROOT; };
 		376823EB203EE23CA1A5B433 /* Pods-MyFood.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyFood.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyFood/Pods-MyFood.debug.xcconfig"; sourceTree = "<group>"; };
 		6B6A7BC513332A790F949B06 /* Pods-MyFood.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyFood.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyFood/Pods-MyFood.release.xcconfig"; sourceTree = "<group>"; };
 		E9953281EDF2E39981E49C7A /* Pods_MyFood.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyFood.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -86,6 +84,7 @@
 			children = (
 				030A33A820C81FCB002BD03F /* UIView + Anchors.swift */,
 				030A33B720C8404F002BD03F /* Calendar+DayOfWeek.swift */,
+				03FFBBB320CB18FD007C5CD5 /* Assets.xcassets */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -119,10 +118,8 @@
 				03FFBBAC20CAA590007C5CD5 /* PopOverViewController.swift */,
 				03BFB50820C88E6B00933965 /* LoginLeadingPage */,
 				0367B78A20C7124E005BD3D8 /* Main.storyboard */,
-				03BFB50C20C96E4000933965 /* Dishes.swift */,
 				030A33B620C8403F002BD03F /* Extensions */,
 				03BFB50920C88E9C00933965 /* Animations */,
-				0367B78D20C7124E005BD3D8 /* Assets.xcassets */,
 				0367B78F20C7124E005BD3D8 /* LaunchScreen.storyboard */,
 				0367B79220C7124E005BD3D8 /* Info.plist */,
 			);
@@ -239,7 +236,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0367B79120C7124E005BD3D8 /* LaunchScreen.storyboard in Resources */,
-				0367B78E20C7124E005BD3D8 /* Assets.xcassets in Resources */,
+				03FFBBB420CB18FD007C5CD5 /* Assets.xcassets in Resources */,
 				0367B78C20C7124E005BD3D8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -320,7 +317,6 @@
 				030A33A920C81FCB002BD03F /* UIView + Anchors.swift in Sources */,
 				030A33B520C8311A002BD03F /* GoogleSheetsDataProvider.swift in Sources */,
 				030A33B820C8404F002BD03F /* Calendar+DayOfWeek.swift in Sources */,
-				03BFB50D20C96E4000933965 /* Dishes.swift in Sources */,
 				030A33B220C829B8002BD03F /* GoogleLoginManager.swift in Sources */,
 				0367B78920C7124E005BD3D8 /* LoginController.swift in Sources */,
 				0304061120CA46560096D5B1 /* DailyFoodCell.swift in Sources */,

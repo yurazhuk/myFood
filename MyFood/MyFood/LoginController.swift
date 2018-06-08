@@ -22,7 +22,6 @@ class LogInController: UIViewController, GIDSignInUIDelegate{
         
         configureLoginManager()
         setupLoginButton()
-//        setupNameButton()
     }
     
     private func configureLoginManager() {
@@ -37,18 +36,6 @@ class LogInController: UIViewController, GIDSignInUIDelegate{
         signInButton.center = view.center
         view.addSubview(signInButton)
     }
-    
-    private func presentDailyFoodController(with authorizer: GTMFetcherAuthorizationProtocol) {
-        
-//        let controller = DailyFoodController(authorizer)
-//
-//        self.present(controller, animated: true, completion: nil)
-        
-//        let controller = NameVC(authorizer)
-//        
-//        self.present(controller, animated: true, completion: nil)
-    }
-    
     
     // Helper for showing an alert
     func showAlert(title : String, message: String) {
@@ -65,6 +52,14 @@ class LogInController: UIViewController, GIDSignInUIDelegate{
         alert.addAction(ok)
         present(alert, animated: true, completion: nil)
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "lol" {
+            let destVC = segue.destination as! NameVC
+            print(authorizer)
+            destVC.sheetsDataProvider = sender as! GTMFetcherAuthorizationProtocol
+        }
+    }
 }
 
 
@@ -78,20 +73,11 @@ extension LogInController: GoogleLoginManagerDelegate {
     func didLoginSuccessfully(with authorizer: GTMFetcherAuthorizationProtocol) {
         self.signInButton.isHidden = true
         self.authorizer = authorizer
-//        presentDailyFoodController(with: authorizer)
         performSegue(withIdentifier: "lol", sender: authorizer)
         self.authorizer = authorizer
         
     }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "lol" {
-            let destVC = segue.destination as! NameVC
-            print(authorizer)
-            destVC.sheetsDataProvider = sender as! GTMFetcherAuthorizationProtocol
-        }
-    }
-    
+
 }
 
 

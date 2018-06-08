@@ -15,7 +15,6 @@ class DailyFoodCell: UITableViewCell {
     
     func setMeal(meal: Meal) {
         cellImageView.image = meal.image
-        print(meal.mealName)
         mealName?.text = meal.mealName
     }
 }
