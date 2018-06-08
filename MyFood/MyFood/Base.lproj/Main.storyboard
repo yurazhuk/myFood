@@ -27,12 +27,13 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <segue destination="IUE-Gg-tGs" kind="show" identifier="lol" id="uPo-p9-ejU"/>
+                        <segue destination="IUE-Gg-tGs" kind="show" identifier="nameVCsegue" id="uPo-p9-ejU"/>
+                        <segue destination="Lgn-WT-Q7l" kind="show" identifier="dailyFoodVC" id="SbG-eU-Zoa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-50" y="-1001"/>
+            <point key="canvasLocation" x="1582" y="-1780"/>
         </scene>
         <!--NameVC-->
         <scene sceneID="4sK-2Q-YFh">
@@ -41,16 +42,33 @@
                     <view key="view" contentMode="scaleToFill" id="nry-Sx-oY6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JTw-h5-oMn">
+                                <rect key="frame" x="153" y="351" width="68" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="C8j-Eq-dta">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="C8j-Eq-dta" firstAttribute="trailing" secondItem="hSj-qb-cFf" secondAttribute="trailing" id="67p-Jt-Rfo"/>
+                            <constraint firstItem="C8j-Eq-dta" firstAttribute="leading" secondItem="hSj-qb-cFf" secondAttribute="leading" id="Kcc-Nj-CTm"/>
+                            <constraint firstItem="C8j-Eq-dta" firstAttribute="bottom" secondItem="hSj-qb-cFf" secondAttribute="bottom" id="V66-BJ-Uk0"/>
+                            <constraint firstItem="C8j-Eq-dta" firstAttribute="top" secondItem="nry-Sx-oY6" secondAttribute="top" id="w3A-Bm-Rgz"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="hSj-qb-cFf"/>
                     </view>
                     <connections>
-                        <segue destination="Lgn-WT-Q7l" kind="show" identifier="kek" id="bL1-lj-afB"/>
+                        <outlet property="backgroundImage" destination="C8j-Eq-dta" id="fuU-1K-IQ9"/>
+                        <segue destination="Lgn-WT-Q7l" kind="show" identifier="presentDailyFood" id="bL1-lj-afB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7OZ-Zf-mjk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="996" y="-1000"/>
+            <point key="canvasLocation" x="996" y="-1000.7496251874064"/>
         </scene>
         <!--Daily Food Controller-->
         <scene sceneID="1ml-2u-vcy">
@@ -189,6 +207,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Salad" width="266" height="400"/>
+        <image name="Salad" width="512" height="384"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="bL1-lj-afB"/>
+    </inferredMetricsTieBreakers>
 </document>
