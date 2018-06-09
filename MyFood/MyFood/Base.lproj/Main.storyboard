@@ -38,7 +38,6 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="backgroundImage" destination="4Eg-mO-TJg" id="urs-ul-hDQ"/>
                         <segue destination="IUE-Gg-tGs" kind="show" identifier="nameVCsegue" id="uPo-p9-ejU"/>
                         <segue destination="Lgn-WT-Q7l" kind="show" identifier="dailyFoodVC" id="SbG-eU-Zoa"/>
                     </connections>
@@ -55,26 +54,40 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JTw-h5-oMn">
-                                <rect key="frame" x="153" y="351" width="68" height="47"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="C8j-Eq-dta">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="C8j-Eq-dta">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
+                            <textField hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mKD-jM-QKR">
+                                <rect key="frame" x="139" y="318" width="97" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" textContentType="name"/>
+                            </textField>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dXj-Pa-vXX">
+                                <rect key="frame" x="139" y="390" width="110" height="46"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-BoldItalic" family="Avenir Next" pointSize="22"/>
+                                <state key="normal" title="Let me in)"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="mKD-jM-QKR" firstAttribute="centerY" secondItem="C8j-Eq-dta" secondAttribute="centerY" id="4gb-rz-pKg"/>
                             <constraint firstItem="C8j-Eq-dta" firstAttribute="trailing" secondItem="hSj-qb-cFf" secondAttribute="trailing" id="67p-Jt-Rfo"/>
                             <constraint firstItem="C8j-Eq-dta" firstAttribute="leading" secondItem="hSj-qb-cFf" secondAttribute="leading" id="Kcc-Nj-CTm"/>
+                            <constraint firstItem="hSj-qb-cFf" firstAttribute="bottom" secondItem="dXj-Pa-vXX" secondAttribute="bottom" constant="231" id="Mu3-Rk-N1x"/>
+                            <constraint firstItem="mKD-jM-QKR" firstAttribute="centerX" secondItem="C8j-Eq-dta" secondAttribute="centerX" id="Mx2-oj-TmB"/>
+                            <constraint firstItem="mKD-jM-QKR" firstAttribute="leading" secondItem="hSj-qb-cFf" secondAttribute="leading" constant="139" id="U3p-uo-lkP"/>
                             <constraint firstItem="C8j-Eq-dta" firstAttribute="bottom" secondItem="hSj-qb-cFf" secondAttribute="bottom" id="V66-BJ-Uk0"/>
+                            <constraint firstItem="hSj-qb-cFf" firstAttribute="trailing" secondItem="dXj-Pa-vXX" secondAttribute="trailing" constant="141" id="jg4-bj-oai"/>
+                            <constraint firstItem="dXj-Pa-vXX" firstAttribute="leading" secondItem="hSj-qb-cFf" secondAttribute="leading" constant="141" id="kOm-Du-If1"/>
+                            <constraint firstItem="dXj-Pa-vXX" firstAttribute="top" secondItem="mKD-jM-QKR" secondAttribute="bottom" constant="42" id="uPv-hW-2E0"/>
                             <constraint firstItem="C8j-Eq-dta" firstAttribute="top" secondItem="nry-Sx-oY6" secondAttribute="top" id="w3A-Bm-Rgz"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="hSj-qb-cFf"/>
                     </view>
                     <connections>
                         <outlet property="backgroundImage" destination="C8j-Eq-dta" id="fuU-1K-IQ9"/>
+                        <outlet property="loginButton" destination="dXj-Pa-vXX" id="on6-MJ-Pde"/>
                         <segue destination="Lgn-WT-Q7l" kind="show" identifier="presentDailyFood" id="bL1-lj-afB"/>
                     </connections>
                 </viewController>

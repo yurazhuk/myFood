@@ -21,7 +21,7 @@ class DailyFoodController: UIViewController, UITableViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        token = GIDSignIn.sharedInstance().currentUser.authentication.fetcherAuthorizer()
         configureSheetsDataProvider(from: token)
         requestDataFromProvider()
         
