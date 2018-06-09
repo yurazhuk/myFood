@@ -16,7 +16,6 @@ class LogInController: UIViewController, GIDSignInUIDelegate{
     private var loginManager: GoogleLoginManager!
     private var authorizer: GTMFetcherAuthorizationProtocol!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         GIDSignIn.sharedInstance().uiDelegate = self
@@ -31,7 +30,6 @@ class LogInController: UIViewController, GIDSignInUIDelegate{
         loginManager.delegate = self
         
     }
-    
     
     private func setupLoginButton() {
         // NOTE: - Used default size for button, specify frame size to adjust
@@ -55,8 +53,8 @@ class LogInController: UIViewController, GIDSignInUIDelegate{
         alert.addAction(ok)
         present(alert, animated: true, completion: nil)
     }
+    
 }
-
 
 // MARK: - GoogleLoginManagerDelegate
 
@@ -68,10 +66,16 @@ extension LogInController: GoogleLoginManagerDelegate {
     func didLoginSuccessfully(with authorizer: GTMFetcherAuthorizationProtocol) {
         self.signInButton.isHidden = true
         self.authorizer = authorizer
-        performSegue(withIdentifier: "nameVCsegue", sender: self)
         
+        if UserDefaults.standard.isLoggedIn() {
+            performSegue(withIdentifier: "straightToMenu", sender: self)
+        } else {
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let view = storyboard.instantiateViewController(withIdentifier: "NameVC") as! NameVC
+            let appDelegate = UIApplication.shared.delegate as! AppDelegate
+            appDelegate.window?.rootViewController = view
+        }
     }
-    
 }
 
 

@@ -33,6 +33,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                      options: [UIApplicationOpenURLOptionsKey : Any]) -> Bool {
         let sourceApplication = options[UIApplicationOpenURLOptionsKey.sourceApplication] as? String
         let annotation = options[UIApplicationOpenURLOptionsKey.annotation]
+        
         return GIDSignIn.sharedInstance().handle(url,
                                                  sourceApplication: sourceApplication,
                                                  annotation: annotation)

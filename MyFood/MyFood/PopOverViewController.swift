@@ -20,6 +20,7 @@ class PopOverViewController : UIViewController{
     override func viewDidLoad() {
         imageView.image = meal.image
         textField.text = meal.descriprion
-        
     }
+    
+    
 }

@@ -10,7 +10,7 @@ import Foundation
 
 class DailyMenuModel {
     
-    private let name = "Боб Коузи"
+    private let name = UserDefaults.standard.getName() ?? "Боб Коузи"
     private var input = [[String]]()
     private(set) var workerMeal = [String]()  
     

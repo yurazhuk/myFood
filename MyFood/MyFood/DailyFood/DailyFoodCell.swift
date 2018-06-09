@@ -17,4 +17,6 @@ class DailyFoodCell: UITableViewCell {
         cellImageView.image = meal.image
         mealName?.text = meal.mealName
     }
+
+    
 }

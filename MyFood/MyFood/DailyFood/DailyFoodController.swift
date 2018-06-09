@@ -24,11 +24,21 @@ class DailyFoodController: UIViewController, UITableViewDelegate {
         token = GIDSignIn.sharedInstance().currentUser.authentication.fetcherAuthorizer()
         configureSheetsDataProvider(from: token)
         requestDataFromProvider()
+        setupNavigationBar()
         
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.estimatedRowHeight = 150
+        tableView.estimatedRowHeight = 125
         tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.backgroundColor = UIColor(patternImage: UIImage(named: "pattern")!)
+    }
+    
+    private func setupNavigationBar() {
+        navigationController?.navigationBar.prefersLargeTitles = true
+        let attributes = [NSAttributedStringKey.font: UIFont(name: "HelveticaNeue-Light", size: 17)!]
+        UINavigationBar.appearance().titleTextAttributes = attributes
+        navigationItem.title = "Food"
+        navigationController?.navigationBar.barTintColor = UIColor(patternImage: UIImage(named: "pattern")!)
     }
     
     private func configureSheetsDataProvider(from token: GTMFetcherAuthorizationProtocol) {
@@ -116,6 +126,8 @@ extension DailyFoodController:  UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         performSegue(withIdentifier: "presentPopover", sender: self)
     }
+    
+    
     
 }
 
