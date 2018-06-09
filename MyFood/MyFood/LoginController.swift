@@ -55,14 +55,6 @@ class LogInController: UIViewController, GIDSignInUIDelegate{
         alert.addAction(ok)
         present(alert, animated: true, completion: nil)
     }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "nameVCsegue" {
-            let destVC = segue.destination as! NameVC
-            destVC.token = sender as! GTMFetcherAuthorizationProtocol
-        }
-        
-    }
 }
 
 
@@ -76,10 +68,10 @@ extension LogInController: GoogleLoginManagerDelegate {
     func didLoginSuccessfully(with authorizer: GTMFetcherAuthorizationProtocol) {
         self.signInButton.isHidden = true
         self.authorizer = authorizer
-        performSegue(withIdentifier: "nameVCsegue", sender: authorizer)
+        performSegue(withIdentifier: "nameVCsegue", sender: self)
         
     }
-
+    
 }
 
 

@@ -14,7 +14,6 @@ class NameVC: UIViewController {
     
     @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var backgroundImage: UIImageView!
-    var token: GTMFetcherAuthorizationProtocol!
     private var userIsLogedIn: Bool{
         return UserDefaults.standard.isLoggedIn()
     }
@@ -22,7 +21,7 @@ class NameVC: UIViewController {
     override func viewDidLoad() {
         if userIsLogedIn {
             DispatchQueue.main.async {
-                self.performSegue(withIdentifier: "presentDailyFood", sender: self.token)
+                self.performSegue(withIdentifier: "presentDailyFood", sender: self)
             }} else {
             backgroundImage.image = UIImage(named: "background")
             view.addSubview(backgroundImage)
@@ -39,13 +38,6 @@ class NameVC: UIViewController {
         UserDefaults.standard.setIsLogedIn(value: true)
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "presentDailyFood" {
-            let destVC = segue.destination as! DailyFoodController
-//            destVC.token = sender as! GTMFetcherAuthorizationProtocol
-        }
-    }
-    
     init() {
         super.init(nibName: nil, bundle: nil)
         userFinishedLoggingIn()
@@ -56,9 +48,8 @@ class NameVC: UIViewController {
     }
     
     @objc func buttonTapped() {
-        performSegue(withIdentifier: "presentDailyFood", sender: token)
+        performSegue(withIdentifier: "presentDailyFood", sender: self)
         userFinishedLoggingIn()
     }
-    
 }
 
