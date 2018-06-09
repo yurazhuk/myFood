@@ -10,7 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MyFood/Services/GoogleSheetsDataProvider.swift"
+<<<<<<< HEAD
             timestampString = "550189926.949124"
+=======
+            timestampString = "550189631.974245"
+>>>>>>> master
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "17"
@@ -73,7 +77,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MyFood/Services/GoogleSheetsDataProvider.swift"
+<<<<<<< HEAD
             timestampString = "550189926.9520169"
+=======
+            timestampString = "550189631.9749171"
+>>>>>>> master
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "19"
@@ -89,7 +97,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MyFood/Services/GoogleSheetsDataProvider.swift"
+<<<<<<< HEAD
             timestampString = "550189926.9532681"
+=======
+            timestampString = "550189631.975401"
+>>>>>>> master
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "21"
@@ -105,7 +117,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MyFood/Services/GoogleSheetsDataProvider.swift"
+<<<<<<< HEAD
             timestampString = "550189926.95434"
+=======
+            timestampString = "550189631.975775"
+>>>>>>> master
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "23"
@@ -168,7 +184,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MyFood/Services/GoogleSheetsDataProvider.swift"
+<<<<<<< HEAD
             timestampString = "550189926.958281"
+=======
+            timestampString = "550189631.9769011"
+>>>>>>> master
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "25"
@@ -231,13 +251,22 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MyFood/Services/GoogleSheetsDataProvider.swift"
+<<<<<<< HEAD
             timestampString = "550189926.959574"
+=======
+            timestampString = "550189631.978053"
+>>>>>>> master
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "27"
             endingLineNumber = "27"
+<<<<<<< HEAD
             landmarkName = "GoogleSheetsDataProviderErrors"
             landmarkType = "13">
+=======
+            landmarkName = "GoogleSheetsDataProvider"
+            landmarkType = "3">
+>>>>>>> master
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -247,13 +276,22 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MyFood/Services/GoogleSheetsDataProvider.swift"
+<<<<<<< HEAD
             timestampString = "550189926.961041"
+=======
+            timestampString = "550189631.979845"
+>>>>>>> master
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "41"
             endingLineNumber = "41"
+<<<<<<< HEAD
             landmarkName = "init(_:)"
             landmarkType = "7">
+=======
+            landmarkName = "GoogleSheetsDataProvider"
+            landmarkType = "3">
+>>>>>>> master
             <Locations>
                <Location
                   shouldBeEnabled = "No"
@@ -295,12 +333,20 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MyFood/Services/GoogleSheetsDataProvider.swift"
+<<<<<<< HEAD
             timestampString = "550189926.962213"
+=======
+            timestampString = "550189631.980875"
+>>>>>>> master
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "46"
             endingLineNumber = "46"
+<<<<<<< HEAD
             landmarkName = "updateServiceAuthorizer(to:)"
+=======
+            landmarkName = "init()"
+>>>>>>> master
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -311,13 +357,22 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MyFood/Services/GoogleSheetsDataProvider.swift"
+<<<<<<< HEAD
             timestampString = "550189926.963358"
+=======
+            timestampString = "550189631.981387"
+>>>>>>> master
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "51"
             endingLineNumber = "51"
+<<<<<<< HEAD
             landmarkName = "listMajors(_:range:)"
             landmarkType = "7">
+=======
+            landmarkName = "GoogleSheetsDataProvider"
+            landmarkType = "3">
+>>>>>>> master
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -327,13 +382,22 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MyFood/Services/GoogleSheetsDataProvider.swift"
+<<<<<<< HEAD
             timestampString = "550189926.964499"
+=======
+            timestampString = "550189631.981836"
+>>>>>>> master
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "52"
             endingLineNumber = "52"
+<<<<<<< HEAD
             landmarkName = "listMajors(_:range:)"
             landmarkType = "7">
+=======
+            landmarkName = "GoogleSheetsDataProvider"
+            landmarkType = "3">
+>>>>>>> master
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -343,12 +407,20 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MyFood/Services/GoogleSheetsDataProvider.swift"
+<<<<<<< HEAD
             timestampString = "550189926.965494"
+=======
+            timestampString = "550189631.982293"
+>>>>>>> master
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "53"
             endingLineNumber = "53"
+<<<<<<< HEAD
             landmarkName = "listMajors(_:range:)"
+=======
+            landmarkName = "listMajors(_:)"
+>>>>>>> master
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -359,12 +431,20 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MyFood/Services/GoogleSheetsDataProvider.swift"
+<<<<<<< HEAD
             timestampString = "550189926.966658"
+=======
+            timestampString = "550189631.9828"
+>>>>>>> master
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "54"
             endingLineNumber = "54"
+<<<<<<< HEAD
             landmarkName = "listMajors(_:range:)"
+=======
+            landmarkName = "listMajors(_:)"
+>>>>>>> master
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -375,12 +455,20 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MyFood/Services/GoogleSheetsDataProvider.swift"
+<<<<<<< HEAD
             timestampString = "550189926.967832"
+=======
+            timestampString = "550189631.983124"
+>>>>>>> master
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "55"
             endingLineNumber = "55"
+<<<<<<< HEAD
             landmarkName = "listMajors(_:range:)"
+=======
+            landmarkName = "listMajors(_:)"
+>>>>>>> master
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
