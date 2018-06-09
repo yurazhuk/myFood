@@ -10,6 +10,9 @@ import UIKit
 
 class LoginLeadingPageController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
 
+    
+    // not implemented
+    
     lazy var colectionView:UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal

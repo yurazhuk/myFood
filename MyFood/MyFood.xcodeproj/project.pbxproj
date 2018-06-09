@@ -138,12 +138,20 @@
 		03BFB50820C88E6B00933965 /* LoginLeadingPage */ = {
 			isa = PBXGroup;
 			children = (
+				03DCACEB20CC520800A7BCBA /* not implemented */,
+			);
+			path = LoginLeadingPage;
+			sourceTree = "<group>";
+		};
+		03DCACEB20CC520800A7BCBA /* not implemented */ = {
+			isa = PBXGroup;
+			children = (
 				030A33A220C80341002BD03F /* LoginLeadingPageController.swift */,
 				030A33A620C8111A002BD03F /* PageModel.swift */,
 				03DCACE920CC471000A7BCBA /* StartUsingApplicationCell.swift */,
 				030A33A420C80AC4002BD03F /* PageCell.swift */,
 			);
-			path = LoginLeadingPage;
+			path = "not implemented";
 			sourceTree = "<group>";
 		};
 		03FFBBAE20CACD09007C5CD5 /* DailyFood */ = {
