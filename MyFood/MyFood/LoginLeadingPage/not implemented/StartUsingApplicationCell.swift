@@ -22,10 +22,10 @@ class LoginCell: UICollectionViewCell {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        addSubview(loginButton)
+        addSubview(startButton)
         
         
-        _ = loginButton.anchor(bottomAnchor, left: leftAnchor, bottom: nil, right: rightAnchor, topConstant: 80, leftConstant: 50, bottomConstant: 0, rightConstant: 50, widthConstant: 0, heightConstant: 80)
+        _ = startButton.anchor(bottomAnchor, left: leftAnchor, bottom: nil, right: rightAnchor, topConstant: 80, leftConstant: 50, bottomConstant: 0, rightConstant: 50, widthConstant: 0, heightConstant: 80)
     }
     
     required init?(coder aDecoder: NSCoder) {
